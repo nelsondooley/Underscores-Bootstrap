@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-8">
 						<?php
 						if ( have_posts() ) :
 
@@ -50,11 +50,13 @@ get_header(); ?>
 
 						endif; ?>
 					</div>
+					<div class="col-md-4">
+						<?php get_sidebar(); ?>
+					</div>
 				</div>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
